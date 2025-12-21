@@ -19,9 +19,9 @@
 #define SCROLL   2
 
 &trackball_listener {
-    input-processors = <
+    // input-processors = <
                          // &zip_temp_layer MOUSE 500
-    >;
+    // >;
 
     scroller {
         layers = <SCROLL>;
