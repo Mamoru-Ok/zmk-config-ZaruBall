@@ -7,10 +7,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup ZMK (v4.1)
-        uses: zmkfirmware/zmk/.github/actions/setup@v4.1
+        uses: zmkfirmware/zmk/.github/actions/setup@v0.4.0
 
       - name: Build left
-        uses: zmkfirmware/zmk/.github/actions/build@v4.1
+        uses: zmkfirmware/zmk/.github/actions/build@v0.4.0
         with:
           board: xiao_ble
           shield: zaru_ball_left
@@ -21,10 +21,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup ZMK (v4.1)
-        uses: zmkfirmware/zmk/.github/actions/setup@v4.1
+        uses: zmkfirmware/zmk/.github/actions/setup@v0.4.0
 
       - name: Build right
-        uses: zmkfirmware/zmk/.github/actions/build@v4.1
+        uses: zmkfirmware/zmk/.github/actions/build@v0.4.0
         with:
           board: xiao_ble
           shield: zaru_ball_right
@@ -35,10 +35,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup ZMK (v4.1)
-        uses: zmkfirmware/zmk/.github/actions/setup@v4.1
+        uses: zmkfirmware/zmk/.github/actions/setup@v0.4.0
 
       - name: Build settings reset
-        uses: zmkfirmware/zmk/.github/actions/build@v4.1
+        uses: zmkfirmware/zmk/.github/actions/build@v0.4.0
         with:
           board: xiao_ble
           shield: settings_reset
