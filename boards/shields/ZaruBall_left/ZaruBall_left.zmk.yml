@@ -1,0 +1,10 @@
+file_format: "1"
+id: ZaruBall_left
+name: ZaruBall Left
+type: shield
+requires: [xiao_ble]
+features:
+  - keys
+  - encoder
+  - pointer
+  - studio
