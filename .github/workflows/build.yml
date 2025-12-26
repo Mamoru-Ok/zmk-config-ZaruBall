@@ -1,44 +1,11 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  left:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 
-      - name: Setup ZMK (v4.1)
-        uses: zmkfirmware/zmk/.github/actions/setup@v0.4.0
+# on: [workflow_dispatch]
 
-      - name: Build left
-        uses: zmkfirmware/zmk/.github/actions/build@v0.4.0
-        with:
-          board: xiao_ble
-          shield: zaru_ball_left
-
-  right:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup ZMK (v4.1)
-        uses: zmkfirmware/zmk/.github/actions/setup@v0.4.0
-
-      - name: Build right
-        uses: zmkfirmware/zmk/.github/actions/build@v0.4.0
-        with:
-          board: xiao_ble
-          shield: zaru_ball_right
-
-  reset:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup ZMK (v4.1)
-        uses: zmkfirmware/zmk/.github/actions/setup@v0.4.0
-
-      - name: Build settings reset
-        uses: zmkfirmware/zmk/.github/actions/build@v0.4.0
-        with:
-          board: xiao_ble
-          shield: settings_reset
+# jobs:
+#   build:
+#     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
