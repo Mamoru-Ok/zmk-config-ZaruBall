@@ -17,6 +17,8 @@
 #     artifact-name: corne_left_with_logging
 #
 
+zmk_revision: v4.1
+
 include:
   - board: xiao_ble
     shield: zaru_ball_left
